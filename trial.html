@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- responsive to mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shaimaa Hassan's Guess Word Game...</title>
+    <!-- icon style sheets -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main style_t css file -->
+    <link rel="stylesheet" href="css/style_t.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;600&display=swap" rel="stylesheet">
+<!-- Bootstrap5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- render all elements normally -->
+<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="winner position-absolute d-none" style="inset:0;"><!--inset make every side 0 center the picture-->
+        <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_pftfocph.json" 
+         background="transparent"  speed="1"  style="width: 100%; height: 300px;"  
+         loop  autoplay></lottie-player>
+    </div>
+    <main class="app m-auto text-center pt-5 bg-black " style="height: 100vh;">
+        <div class="container">
+            <h1 class="title fw-bold mt-5">خمن الكلمة</h1>
+            <div class="card bg-secondary m-auto pt-5 pb-5 ps-3 pe-3 border border-secondary border-radius-2" style="width: 300px;">
+                <div class="card-content">
+                    <input class="typing opacity-0 position-absolute" style="z-index: -1;" type="text" name=""  maxlength="1">
+                    <div class="inputs d-flex flex-wrap justify-content-center gap-1">
+                        
+
+                    </div>
+                    <div class="info mt-5 mb-5">
+                        <p class="text-light fs-6 desk"></p>
+                        <p class="text-light fs-6 ">عدد المحاولات : <span class="guess-count text-info"></span></p>
+                    </div>
+                    <button class="btn-primary fs-4 text-white cursor-pointer pt-2 pb-2 w-100">جرب تاني <span class="text-warning fw-bold fs-3">&#128521;</span></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- js lottiefiles -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- js-Bootstrap5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- js -->
+    <script src="javascript/guessword.js"></script>
+</body>
+</html>
